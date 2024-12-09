@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.cloud.aws.client.impl.ObjectStorageCloudClientImpl,\
+com.normalworks.common.cloud.aws.client.impl.EmailCloudClientImpl,\
+com.normalworks.common.cloud.aws.client.impl.AwsS3ClientImpl,\
+com.normalworks.common.cloud.aws.config.AwsCommonConfig,\
+com.normalworks.common.cloud.aws.config.AwsS3Config,\
+com.normalworks.common.cloud.aws.client.impl.AwsOcrClientImpl

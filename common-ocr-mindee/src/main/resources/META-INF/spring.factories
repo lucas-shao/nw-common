@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.ocr.mindee.client.impl.MindeeOcrClientImpl,\
+com.normalworks.common.ocr.mindee.config.MindeeOcrConfig

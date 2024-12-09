@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.task.repository.impl.RetryTaskConfigRepositoryImpl,\
+com.normalworks.common.task.repository.impl.RetryTaskRepositoryImpl,\
+com.normalworks.common.task.repository.impl.TaskConfigRepositoryImpl,\
+com.normalworks.common.task.config.TaskIntegrationConfig,\
+com.normalworks.common.task.component.TaskLockTemplate,\
+com.normalworks.common.task.ScheduledRetryTask,\
+com.normalworks.common.task.service.RetryTaskCoreServiceImpl

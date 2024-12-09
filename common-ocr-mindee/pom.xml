@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.normalworks</groupId>
+        <artifactId>common-parent</artifactId>
+        <version>1.0.0-20230505</version>
+    </parent>
+
+    <groupId>com.normalworks</groupId>
+    <artifactId>common-ocr-mindee</artifactId>
+    <version>${nw.common.ocr.mindee.version}</version>
+    <packaging>jar</packaging>
+    <name>common-ocr-mindee</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.normalworks</groupId>
+            <artifactId>common-utils</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <artifactId>mindee-api-java</artifactId>
+            <groupId>com.mindee.sdk</groupId>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.cloud.aliyun.client.impl.EmailCloudClientImpl,\
+com.normalworks.common.cloud.aliyun.config.AliyunEmailConfig

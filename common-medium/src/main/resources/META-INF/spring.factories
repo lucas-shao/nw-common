@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.medium.repository.impl.FileRepositoryImpl,\
+com.normalworks.common.medium.repository.impl.ImageRepositoryImpl,\
+com.normalworks.common.medium.repository.impl.MediumRepositoryImpl,\
+com.normalworks.common.medium.service.impl.FileCoreServiceImpl,\
+com.normalworks.common.medium.service.impl.ImageCoreServiceImpl,\
+com.normalworks.common.medium.config.MediumIntegrationConfig

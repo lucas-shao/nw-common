@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.webencrypt.web.EncryptConfig,\
+com.normalworks.common.webencrypt.record.EncryptConfigRecordService,\
+com.normalworks.common.webencrypt.web.WebEncryptFilterService,\
+com.normalworks.common.webencrypt.web.ApiEncryptDataInit,\
+com.normalworks.common.webencrypt.record.repository.impl.EncryptConfigRecordRepositoryImpl,\
+com.normalworks.common.webencrypt.record.ParamEncryptService

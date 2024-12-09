@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.companieshouse.config.CompaniesHouseConfig,\
+com.normalworks.common.companieshouse.service.CompaniesHouseService

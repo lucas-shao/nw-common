@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.clickup.config.ClickUpConfig,\
+com.normalworks.common.clickup.service.ClickUpService

@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.normalworks</groupId>
+        <artifactId>common-parent</artifactId>
+        <version>1.0.0-20230505</version>
+    </parent>
+
+    <groupId>com.normalworks</groupId>
+    <artifactId>common-cloud-aws</artifactId>
+    <version>${nw.common.cloud.aws.version}</version>
+    <packaging>jar</packaging>
+    <name>common-cloud-aws</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.normalworks</groupId>
+            <artifactId>common-cloud-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.normalworks</groupId>
+            <artifactId>common-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!-- aws s3 -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>s3</artifactId>
+        </dependency>
+
+        <!-- aws simple email service -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>ses</artifactId>
+        </dependency>
+
+        <!-- aws ocr text -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>textract</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.service.sso.google.config.GoogleSsoConfig,\
+com.normalworks.common.service.sso.google.client.impl.GoogleSsoClientImpl

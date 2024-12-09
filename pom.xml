@@ -1,0 +1,354 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.normalworks</groupId>
+    <artifactId>common-parent</artifactId>
+    <version>1.0.0-20230505</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>common-base-model</module>
+        <module>common-template</module>
+        <module>common-utils</module>
+        <module>common-webencrypt</module>
+        <module>common-task</module>
+        <module>common-cloud-api</module>
+        <module>common-cloud-aws</module>
+        <module>common-cloud-aliyun</module>
+        <module>common-service-sso-google</module>
+        <module>common-sequence</module>
+        <module>common-login</module>
+        <module>common-medium</module>
+        <module>common-email</module>
+        <module>common-ocr-mindee</module>
+        <module>common-shorturlcode</module>
+        <module>common-companieshouse</module>
+        <module>common-clickup</module>
+        <module>common-chat</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <nw.common.base.model.version>1.0.1-SNAPSHOT</nw.common.base.model.version>
+        <nw.common.template.version>1.0.1-SNAPSHOT</nw.common.template.version>
+        <nw.common.utils.version>1.0.1-SNAPSHOT</nw.common.utils.version>
+        <nw.common.webencrypt.version>1.0.0-20230505</nw.common.webencrypt.version>
+        <nw.common.task.version>1.0.2-SNAPSHOT</nw.common.task.version>
+        <nw.common.cloud.api.version>1.0.1-SNAPSHOT</nw.common.cloud.api.version>
+        <nw.common.cloud.aws.version>1.0.1-SNAPSHOT</nw.common.cloud.aws.version>
+        <nw.common.cloud.aliyun.version>1.0.1-SNAPSHOT</nw.common.cloud.aliyun.version>
+        <nw.common.service.sso.google.version>1.0.1-SNAPSHOT</nw.common.service.sso.google.version>
+        <nw.common.sequence.version>1.0.1-SNAPSHOT</nw.common.sequence.version>
+        <nw.common.login.version>1.0.2-SNAPSHOT</nw.common.login.version>
+        <nw.common.medium.version>1.0.1-SNAPSHOT</nw.common.medium.version>
+        <nw.common.email.version>1.0.1-SNAPSHOT</nw.common.email.version>
+        <nw.common.ocr.mindee.version>1.0.0-20230505</nw.common.ocr.mindee.version>
+        <nw.common.shorturlcode.version>1.0.0-20230505</nw.common.shorturlcode.version>
+        <nw.common.companieshouse.version>1.0.1-SNAPSHOT</nw.common.companieshouse.version>
+        <nw.common.clickup.version>1.0.1-SNAPSHOT</nw.common.clickup.version>
+        <nw.common.chat.version>1.0.0-SNAPSHOT</nw.common.chat.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- inner bundle dependency -->
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-base-model</artifactId>
+                <version>${nw.common.base.model.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-template</artifactId>
+                <version>${nw.common.template.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-cloud-api</artifactId>
+                <version>${nw.common.cloud.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-cloud-aws</artifactId>
+                <version>${nw.common.cloud.aws.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-cloud-aliyun</artifactId>
+                <version>${nw.common.cloud.aliyun.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-webencrypt</artifactId>
+                <version>${nw.common.webencrypt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-task</artifactId>
+                <version>${nw.common.task.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-utils</artifactId>
+                <version>${nw.common.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-sequence</artifactId>
+                <version>${nw.common.sequence.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-service-sso-google</artifactId>
+                <version>${nw.common.service.sso.google.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-login</artifactId>
+                <version>${nw.common.login.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-medium</artifactId>
+                <version>${nw.common.medium.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-email</artifactId>
+                <version>${nw.common.email.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-ocr-mindee</artifactId>
+                <version>${nw.common.ocr.mindee.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.normalworks</groupId>
+                <artifactId>common-companieshouse</artifactId>
+                <version>${nw.common.companieshouse.version}</version>
+            </dependency>
+
+            <!-- extend dependency -->
+
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>1.65</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-core</artifactId>
+                <version>9.0.60</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>5.3.22</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>5.3.22</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.13</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>5.3.22</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.11</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.32</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+            <dependency>
+                <groupId>org.apache.pdfbox</groupId>
+                <artifactId>pdfbox</artifactId>
+                <version>2.0.27</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.11.0</version>
+            </dependency>
+
+            <!-- aws sdk -->
+            <dependency>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>bom</artifactId>
+                <version>2.16.60</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.mail</groupId>
+                <artifactId>jakarta.mail-api</artifactId>
+                <version>2.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>jakarta.mail</artifactId>
+                <version>1.6.5</version>
+            </dependency>
+
+            <!-- google api client -->
+            <dependency>
+                <groupId>com.google.api-client</groupId>
+                <artifactId>google-api-client</artifactId>
+                <version>1.32.1</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.78</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>3.18.2</version>
+            </dependency>
+
+            <!-- velocity -->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>1.7</version>
+            </dependency>
+
+            <!-- gson -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.9.1</version>
+            </dependency>
+
+            <!-- ocr mindee -->
+            <dependency>
+                <artifactId>mindee-api-java</artifactId>
+                <groupId>com.mindee.sdk</groupId>
+                <version>3.0.0</version>
+            </dependency>
+
+            <!-- java mail -->
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>javax.mail</artifactId>
+                <version>1.6.2</version>
+            </dependency>
+
+            <!-- java html 解析器 jsoup -->
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>1.13.1</version>
+            </dependency>
+
+            <!-- http -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>4.5.13</version>
+            </dependency>
+
+            <!-- xero 使用的时间模型 -->
+            <dependency>
+                <groupId>org.threeten</groupId>
+                <artifactId>threetenbp</artifactId>
+                <version>1.5.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>2.15.0</version>
+            </dependency>
+
+            <!-- firebase admin SDK -->
+            <dependency>
+                <groupId>com.google.firebase</groupId>
+                <artifactId>firebase-admin</artifactId>
+                <version>9.2.0</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

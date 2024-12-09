@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.email.repository.impl.EmailMessageDetailRepositoryImpl,\
+com.normalworks.common.email.service.impl.EmailMessageDetailCoreServiceImpl,\
+com.normalworks.common.email.config.EmailIntegrationConfig

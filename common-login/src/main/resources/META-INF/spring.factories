@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.login.config.LoginConfig,\
+com.normalworks.common.login.impl.LoginDomainServiceImpl,\
+com.normalworks.common.login.utils.JwtUtil

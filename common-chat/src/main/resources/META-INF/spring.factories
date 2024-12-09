@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.chat.ChatConfig, \
+com.normalworks.common.chat.ChatMessageRepository, \
+com.normalworks.common.chat.ChatService

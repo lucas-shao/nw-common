@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.shorturlcode.ShortUrlCodeConfig,\
+com.normalworks.common.shorturlcode.ShortUrlCodeRepository,\
+com.normalworks.common.shorturlcode.ShortUrlCodeService

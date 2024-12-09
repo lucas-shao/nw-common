@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.normalworks.common.sequence.SequenceConfig,\
+com.normalworks.common.sequence.SequenceDomainServiceImpl,\
+com.normalworks.common.sequence.SequenceFactory,\
+com.normalworks.common.sequence.repository.impl.SequenceRepositoryImpl,\
+com.normalworks.common.sequence.SequenceUtil
